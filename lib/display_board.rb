@@ -97,16 +97,16 @@ def display_board(board)
       board = ["X", "X", "X", "X", "O", "O", "X", "O", "O"]
 
  def display_board(board) 
-   print rows[0]).to eq(" X | X | X ")
-      expect(rows[1]).to eq("-----------")
-      expect(rows[2]).to eq(" X | O | O ")
-      expect(rows[3]).to eq("-----------")
-      expect(rows[4]).to eq(" X | O | O ")
+   print rows[0]=" X | X | X "
+   print rows[1]="-----------"
+   print rows[2]=" X | O | O "
+   print rows[3]="-----------"
+   print rows[4]=" X | O | O "
 
 
       board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
 
-      output = capture_puts{ display_board(board) }
+def display_board(board) }
       rows = output.split("\n")
 
       expect(rows[0]).to eq(" X | O | X ")
