@@ -1,6 +1,7 @@
 # Define display_board that accepts a board and prints
 # out the current state.
 board = [" "," "," "," "," "," "," "," "," "]
+rows = "   |   |   "
 def display_board(board)
 print "    |   |   "
 print " -----------"
@@ -9,29 +10,26 @@ print " -----------"
 print "    |   |   "
 end
 
-it 'prints a board with an X in the center position' do
+# prints a board with an X in the center position' do
       board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
 
-      output = capture_puts{ display_board(board) }
-      rows = output.split("\n")
-
-      expect(rows[0]).to eq("   |   |   ")
-      expect(rows[1]).to eq("-----------")
-      expect(rows[2]).to eq("   | X |   ")
-      expect(rows[3]).to eq("-----------")
-      expect(rows[4]).to eq("   |   |   ")
+display_board(board) 
+ print rows[0] ="   |   |   "
+ print rows[1]="-----------"
+ print rows[2]="   | X |   "
+ print rows[3]="-----------"
+ print rows[4]="   |   |   "
 
     end
 
-    it 'prints a board with O in the top left' do
-      board = ["O", " ", " ", " ", " ", " ", " ", " ", " "]
+#prints a board with O in the top left'
+
+board = ["O", " ", " ", " ", " ", " ", " ", " ", " "]
       # Leave hint for assigning the 0 index value of O
       board[0] = "O"
 
-      output = capture_puts{ display_board(board) }
-      rows = output.split("\n")
-
-      expect(rows[0]).to eq(" O |   |   ")
+display_board(board) 
+ rows[0]).to eq(" O |   |   ")
       expect(rows[1]).to eq("-----------")
       expect(rows[2]).to eq("   |   |   ")
       expect(rows[3]).to eq("-----------")
