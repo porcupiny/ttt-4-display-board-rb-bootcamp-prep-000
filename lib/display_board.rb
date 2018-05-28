@@ -61,7 +61,7 @@ def display_board(board)
     end
 
 #prints a board with O winning via the bottom row' do
-      board = [" ", " ", " ", " ", " ", " ", "O", "O", "O"]
+board = [" ", " ", " ", " ", " ", " ", "O", "O", "O"]
 
 def display_board(board) 
   print rows[0]="   |   |   "
@@ -72,7 +72,7 @@ def display_board(board)
     end
 
 #prints a board with X winning in a top left to bottom right diagonal' do
-      board = ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
+ board = ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
 
  def display_board(board) 
    print rows[0]=" X |   |   "
@@ -83,7 +83,7 @@ def display_board(board)
     end
 
  #prints a board with O winning in a top right to bottom left diagonal' do
-      board = [" ", " ", "O", " ", "O", " ", "O", " ", " "]
+board = [" ", " ", "O", " ", "O", " ", "O", " ", " "]
 
 def display_board(board) 
   print rows[0]="   |   | O "
@@ -94,7 +94,7 @@ def display_board(board)
     end
 
 #prints arbitrary arrangements of the board' do
-      board = ["X", "X", "X", "X", "O", "O", "X", "O", "O"]
+ board = ["X", "X", "X", "X", "O", "O", "X", "O", "O"]
 
  def display_board(board) 
    print rows[0]=" X | X | X "
@@ -104,7 +104,7 @@ def display_board(board)
    print rows[4]=" X | O | O "
 end
 
-      board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
+board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
 
 def display_board(board) 
   print rows[0]=" X | O | X "
