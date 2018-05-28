@@ -11,7 +11,7 @@ print "    |   |   "
 end
 
 # prints a board with an X in the center position' do
-      board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
+board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
 
 def display_board(board) 
  print rows[0]="   |   |   "
@@ -50,7 +50,7 @@ def display_board(board)
     end
 
 #prints a board with X winning via the top row' do
-      board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
+ board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
 
 def display_board(board)  
   print rows[0]=" X | X | X "
